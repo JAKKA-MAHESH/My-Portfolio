@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakka Mahesh | Web Developer</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Swiper CSS for Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Custom CSS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="#hero" class="logo">JM</a></div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content" data-reveal="fade-up">
+            <h1>Jakka Mahesh</h1>
+            <p>Web Developer | Innovator | Dreamer</p>
+            <button class="hero-btn"><a href="#projects" class="hero-btn">Discover My Work</a></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 data-reveal="fade-up">About Me</h2>
+        <p data-reveal="fade-up" data-reveal-delay="200">I'm a passionate web developer with a knack for crafting seamless digital experiences using HTML, CSS, JavaScript, and more. My goal? To build solutions that inspire and connect people worldwide.</p>
+        <div class="skills-grid" data-reveal="fade-up" data-reveal-delay="400">
+            <div class="skill-item">HTML5 & CSS3</div>
+            <div class="skill-item">Bootstrap</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Express.js</div>
+            <div class="skill-item">MySQL</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 data-reveal="fade-up">My Projects</h2>
+        <div class="swiper" data-reveal="fade-up" data-reveal-delay="200">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/foodmunchpreview.png" alt="Food Munch" class="project-image">
+                    <h3>Food Munch</h3>
+                    <p>A sleek webpage for food lovers with responsive design.</p>
+                    <a href="./foodmunch/index.html" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/pupshare.png" alt="PupShare" class="project-image">
+                    <h3>PupShare</h3>
+                    <p>A vibrant site connecting dog lovers, built with Bootstrap.</p>
+                    <a href="./pupshare/index.html" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/beat_it.png" alt="Beat It" class="project-image">
+                    <h3>Beat It</h3>
+                    <p>An interactive drum kit app showcasing front-end skills.</p>
+                    <a href="./drumfun/index.html" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/weather.png" alt="Beat It" class="project-image">
+                    <h3>WeatherApp</h3>
+                    <p>WeatherApp provides real-time weather forecasts for global locations easily.</p>
+                    <a href="./weatherapp/index.html" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/todolist.png" alt="Beat It" class="project-image">
+                    <h3>TodoListWebApp</h3>
+                    <p>TodoListWebApp helps users manage tasks efficiently with ease.</p>
+                    <a href="./todolist_web_app/index.html" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/typerush.png" alt="Beat It" class="project-image">
+                    <h3>TypeRush</h3>
+                    <p>TypeRush improves typing speed and accuracy through fun challenges.</p>
+                    <a href="./TypeRush/index.html" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 data-reveal="fade-up">Get in Touch</h2>
+        <div class="contact-grid" data-reveal="fade-up" data-reveal-delay="200">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> jakkamahesh13@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 8247535865</p>
+                <p><i class="fas fa-map-marker-alt"></i> Dharmavaram, Andhra Pradesh, INDIA</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Jakka Mahesh | "Code the Future."</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jakka-mahesh-673296263/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

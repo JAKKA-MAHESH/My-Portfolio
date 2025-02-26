@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRush - Learn to Type</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>Welcome to TypeRush!</h1>
+        <p>Embark on a cosmic typing adventure—master your keys, conquer the galaxy!</p>
+        <button id="start-game" onclick="startGame()">Start Your Journey</button>
+    </div>
+    <div id="game-container" class="hidden">
+        <h1>TypeRush</h1>
+        <div id="level-select">
+            <button onclick="startLevel(1)">Level 1</button>
+            <button onclick="startLevel(2)" disabled>Level 2</button>
+            <button onclick="startLevel(3)" disabled>Level 3</button>
+            <button onclick="startLevel(4)" disabled>Level 4</button>
+            <button onclick="startLevel(5)" disabled>Level 5</button>
+            <button onclick="startLevel(6)" disabled>Level 6</button>
+            <button onclick="startLevel(7)" disabled>Level 7</button>
+            <button onclick="startLevel(8)" disabled>Level 8</button>
+            <button onclick="startLevel(9)" disabled>Level 9</button>
+            <button onclick="startLevel(10)" disabled>Level 10</button>
+        </div>
+        <div id="game" class="hidden">
+            <div id="display-text"></div>
+            <label for="input-field"></label>
+            <input type="text" id="input-field" placeholder="Start typing..." title="Typing input field" autofocus>
+            <div id="timer">Time: 60s</div>
+            <div id="stats">WPM: 0 | Accuracy: 100%</div>
+            <button id="restart" onclick="restartLevel()">Restart</button>
+        </div>
+    </div>
+    <div id="victory-screen" class="hidden">
+        <h2>You’re a Typing Champion!</h2>
+        <p>Unleash your skills on the world!</p>
+        <button id="play-again" onclick="resetGame()">Play Again</button>
+    </div>
+    <footer>
+        <p>@ Jakka Mahesh</p>
+    </footer>
+
+    <audio id="keypress-sound" src="spacebar-click-keyboard-199448.mp3"></audio>
+    <audio id="victory-sound" src="victorymale-version-230553.mp3"></audio>
+    <audio id="champion-sound" src="congratulations-deep-voice-172193.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
